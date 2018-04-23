@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using BaiTapVeNhaBuoi10.View;
 
 namespace BaiTapVeNhaBuoi10
 {
@@ -10,6 +11,13 @@ namespace BaiTapVeNhaBuoi10
     {
         static void Main(string[] args)
         {
+            MainView mainView = new MainView();
+            while (true)
+            {
+                mainView.Show();
+                Console.ReadKey();
+                Console.Clear();
+            }
         }
     }
 }
